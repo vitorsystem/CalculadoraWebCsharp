@@ -1,7 +1,86 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
+<h1>Calculadora Web em Blazor</h1>
 
-<h1>Hello, world!</h1>
+<div class="calculator-grid">
+    <input class="form-control mb-2" type="number" @bind="Numero1" placeholder="Primeiro número" />
+    <input class="form-control mb-2" type="number" @bind="Numero2" placeholder="Segundo número" />
 
-Welcome to your new app.
+    <div>
+        <button class="btn btn-primary me-2" @onclick="CalcularSoma">+</button>
+        <button class="btn btn-secondary me-2" @onclick="CalcularSubtracao">-</button>
+        <button class="btn btn-primary me-2" @onclick="CalcularMultiplicacao">*</button>
+        <button class="btn btn-secondary me-2" @onclick="CalcularDivisao">/</button>
+        </div>
+    
+    @if (!string.IsNullOrEmpty(finalResultado))
+    {
+        <h3 class="mt-3">Resultado: @finalResultado</h3>
+    }
+</div>
+
+
+@code {
+    private string? Numero1;
+    private string? Numero2;
+    private string? finalResultado;
+
+    private void CalcularSoma()
+    {
+        if (double.TryParse(Numero1, out double num1) && double.TryParse(Numero2, out double num2))
+        {
+            double resultado = num1 + num2;
+            finalResultado = resultado.ToString("F2"); 
+        }
+        else
+        {
+            finalResultado = "Erro: Insira números válidos.";
+        }
+    }
+
+    private void CalcularSubtracao()
+    {
+        if (double.TryParse(Numero1, out double num1) && double.TryParse(Numero2, out double num2))
+        {
+            double resultado = num1 - num2;
+            finalResultado = resultado.ToString("F2");
+        }
+        else
+        {
+            finalResultado = "Erro: Insira números válidos.";
+        }
+    }
+
+    private void CalcularMultiplicacao()
+    {
+        if (double.TryParse(Numero1, out double num1) && double.TryParse(Numero2, out double num2))
+        {
+            double resultado = num1 * num2;
+            finalResultado = resultado.ToString("F2");
+        }
+        else
+        {
+            finalResultado = "Erro: Insira números válidos.";
+        }
+    }
+
+    private void CalcularDivisao()
+    {
+        if (double.TryParse(Numero1, out double num1) && double.TryParse(Numero2, out double num2))
+        {
+            if (num2 != 0)
+            {
+                double resultado = num1 / num2;
+                finalResultado = resultado.ToString("F2");
+            }
+            else
+            {
+                finalResultado = "Erro: Divisão por zero.";
+            }
+        }
+        else
+        {
+            finalResultado = "Erro: Insira números válidos.";
+        }
+    }
+}
