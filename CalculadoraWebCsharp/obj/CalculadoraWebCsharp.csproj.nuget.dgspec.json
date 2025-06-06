@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Vitor\\Dev\\Projetos\\CalculadoraWebCsharp\\CalculadoraWebCsharp\\CalculadoraWebCsharp.csproj": {}
+    "d:\\Vitor\\Dev\\Projetos\\CalculadoraWebCsharp\\CalculadoraWebCsharp\\CalculadoraWebCsharp.csproj": {}
   },
   "projects": {
-    "D:\\Vitor\\Dev\\Projetos\\CalculadoraWebCsharp\\CalculadoraWebCsharp\\CalculadoraWebCsharp.csproj": {
+    "d:\\Vitor\\Dev\\Projetos\\CalculadoraWebCsharp\\CalculadoraWebCsharp\\CalculadoraWebCsharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Vitor\\Dev\\Projetos\\CalculadoraWebCsharp\\CalculadoraWebCsharp\\CalculadoraWebCsharp.csproj",
+        "projectUniqueName": "d:\\Vitor\\Dev\\Projetos\\CalculadoraWebCsharp\\CalculadoraWebCsharp\\CalculadoraWebCsharp.csproj",
         "projectName": "CalculadoraWebCsharp",
-        "projectPath": "D:\\Vitor\\Dev\\Projetos\\CalculadoraWebCsharp\\CalculadoraWebCsharp\\CalculadoraWebCsharp.csproj",
+        "projectPath": "d:\\Vitor\\Dev\\Projetos\\CalculadoraWebCsharp\\CalculadoraWebCsharp\\CalculadoraWebCsharp.csproj",
         "packagesPath": "C:\\Users\\Julio\\.nuget\\packages\\",
-        "outputPath": "D:\\Vitor\\Dev\\Projetos\\CalculadoraWebCsharp\\CalculadoraWebCsharp\\obj\\",
+        "outputPath": "d:\\Vitor\\Dev\\Projetos\\CalculadoraWebCsharp\\CalculadoraWebCsharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Julio\\AppData\\Roaming\\NuGet\\NuGet.Config"
